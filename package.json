@@ -1,0 +1,13 @@
+{
+  "name": "exec-reps",
+  "version": "0.1.0",
+  "description": "Daily five-minute leadership scenarios for directors and VPs, with streaks and AI feedback.",
+  "type": "module",
+  "private": true,
+  "engines": { "node": ">=22.9" },
+  "scripts": {
+    "start": "node --no-warnings=ExperimentalWarning --env-file-if-exists=.env server.js",
+    "generate": "node --no-warnings=ExperimentalWarning --env-file-if-exists=.env src/generate.js",
+    "test": "node --no-warnings=ExperimentalWarning --test test/*.test.js"
+  }
+}
